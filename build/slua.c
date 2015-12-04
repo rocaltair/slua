@@ -514,3 +514,5 @@ LUALIB_API int luaLS_loadbuffer(lua_State *L, const char *buff, int sz, const ch
 	return luaL_loadbuffer(L, buff, (size_t)sz, name);
 }
 
+#include "all3rd.h"
+

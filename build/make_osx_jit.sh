@@ -2,6 +2,7 @@
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 cp slua.c luajit-2.1.0/src/
+cp -r 3rd/* luajit-2.1.0/src/
 
 cd luajit-2.1.0
 make clean

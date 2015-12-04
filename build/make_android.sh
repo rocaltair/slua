@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 cp slua.c luajit-2.0.4/src/
+cp -r 3rd/* luajit-2.0.4/src/
 cd luajit-2.0.4
 SRCDIR=$(pwd)
 DIR=$(pwd)
 
-NDK=/Users/sineysan/android-ndk-r10  
+#NDK=/Users/sineysan/android-ndk-r10  
+NDK=$ANDROID_NDK_ROOT
 NDKABI=8  
 NDKVER=$NDK/toolchains/arm-linux-androideabi-4.8  
 NDKP=$NDKVER/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-  

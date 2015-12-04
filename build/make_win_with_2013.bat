@@ -1,5 +1,6 @@
 @echo off
 copy /Y slua.c luajit-2.1.0\src\ 
+xcopy 3rd\* luajit-2.1.0\src\ /s /h /d /y
 if exist "%VS120COMNTOOLS%" (
 	set VCVARS="%VS120COMNTOOLS%..\..\VC\bin\"
 	goto build
