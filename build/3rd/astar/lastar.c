@@ -1,5 +1,4 @@
 #include <math.h>
-#include <strings.h>
 #include <stdint.h>
 #include "AStar.h"
 // #include "lua.h"
